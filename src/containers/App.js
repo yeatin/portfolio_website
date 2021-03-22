@@ -1,13 +1,14 @@
 import { useState, lazy, Suspense } from 'react';
 import { Navigation } from '../components/Navigation/Nagivation';
-import { HomePage } from "./HomePage";
-import { AboutMe } from "./AboutMe";
+import { HomePage } from './HomePage';
 import './App.css';
 
 const App = () => {
   const [route, setRoute] = useState('home');
 
   const ProjectsPage = lazy(() => import('./ProjectsPage').then(module => ({ default: module.ProjectsPage })));
+  const AboutMe = lazy(() => import('./AboutMe').then(module => ({ default: module.AboutMe })));
+  const Contact = lazy(() => import('./Contact').then(module => ({ default: module.Contact })));
 
   const onRouteChange = (route) => {
     setRoute(route);
@@ -16,29 +17,38 @@ const App = () => {
 
   return (
     <div>
-      <Navigation onRouteChange={onRouteChange} />
       {
         route === "home"
-          ? <HomePage />
+          ? <div className="home">
+            <Navigation onRouteChange={onRouteChange} />
+            <HomePage />
+          </div>
           : (
             route === "projects"
-              ? <Suspense fallback={<div>Loading...</div>}>
-                <div className="pages">
+              ? <div className="pages">
+                <Suspense fallback={<div>Loading...</div>}>
+                  <Navigation className="pages" onRouteChange={onRouteChange} />
                   <ProjectsPage />
-                </div>
-              </Suspense>
+                </Suspense>
+              </div>
               : (
                 route === "aboutMe"
-                  ? <Suspense fallback={<div>Loading...</div>}>
-                    <div className="pages">
+                  ? <div className="pages">
+                    <Suspense fallback={<div>Loading...</div>}>
+                      <Navigation className="pages" onRouteChange={onRouteChange} />
                       <AboutMe />
-                    </div>
-                  </Suspense>
-                  : <div></div>
+                    </Suspense>
+                  </div>
+                  : <div className="pages">
+                    <Suspense fallback={<div>Loading...</div>}>
+                      <Navigation className="pages" onRouteChange={onRouteChange} />
+                      <Contact />
+                    </Suspense>
+                  </div>
               )
           )
       }
-    </div>
+    </div >
   );
 }
 

@@ -4,3 +4,12 @@
     position: relative;
     top: -3em;
 }
+
+.box>img {
+    filter: grayscale(100%);
+    transition: .1s;
+}
+
+.box>img:hover {
+    filter:grayscale(0);
+}

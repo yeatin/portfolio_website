@@ -1,10 +1,10 @@
-import { Showcase } from '../components/Showcase/Showcase';
+import { ShowcaseList } from '../components/ShowcaseList/ShowcaseList';
 
 const ProjectsPage = () => {
     return (
         <div>
-            <h1 className="tc f2 pt3">01 : Projects</h1>
-            <Showcase />
+            <h1 className="tc f2">01 : Projects</h1>
+            <ShowcaseList />
         </div>
     )
 }

@@ -18,7 +18,7 @@ const Title = () => {
                     .deleteChars(12)
                     .typeString('a Web Developer')
                     .pauseFor(1500)
-                    .deleteChars(13)
+                    .deleteChars(15)
                     .typeString('Looking for a job')
                     .pauseFor(1500)
                     .deleteChars(17)
