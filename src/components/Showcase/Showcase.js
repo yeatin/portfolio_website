@@ -5,11 +5,11 @@ const Showcase = ({ img, title, description, githubLink, launchLink }) => {
         <div className="fl w-33 ph3 box tc">
             <img src={require(`./showcase${img}.jpg`).default} alt={title} />
             <div className="card-container center">
-                <dl className="ma0 f6 lh-copy">
+                <dl className="tl ml4 f6 lh-copy">
                     <dt className="clip">Title</dt>
-                    <dd className="ml0 black truncate f3 black">{title}</dd>
+                    <dd className="ml0 black truncate f3 fw6 black">{title}</dd>
                     <dt className="clip">Artist</dt>
-                    <dd className="ml0 gray w-100">{description}</dd>
+                    <dd className="tl ml0 gray w-70">{description}</dd>
                 </dl>
                 <div className="buttonContainer flex items-center justify-center mt2">
                     <a className="no-underline near-white bg-animate bg-near-black hover-bg-gray inline-flex items-center mr3 tc br2 pa1" href={githubLink} title="GitHub">

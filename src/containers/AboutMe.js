@@ -1,8 +1,24 @@
 const AboutMe = () => {
     return (
-        <div className="h-100">
-            <h1 className="tc f2">02 : About Me</h1>
-            <h1>Under Process</h1>
+        <div className="h-100" style={{ lineHeight: "2em" }}>
+            <h1 className="tc f2 mb4"><span className="f1 fw1">| </span>02 : About Me<span className="f1 fw1"> |</span></h1>
+            <p className="ml7 pt4 w-40">Being a Self-learning web developer, the motives pushing me through is the thrills I get from technical breakthroughs. Cultural gaps should not be obstacles but appreciatable features.</p>
+            <div className="ml7 w-30">
+                <h2>Skills</h2>
+                <ul>
+                    <li>React.js</li>
+                    <li>Redux</li>
+                    <li>ECMAScript 6</li>
+                    <li>API</li>
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>VEGAS 16</li>
+                </ul>
+                <h2>Experience</h2>
+                <ul>
+                    <li>Deputy President of Department Student Council</li>
+                </ul>
+            </div>
         </div>
     )
 }

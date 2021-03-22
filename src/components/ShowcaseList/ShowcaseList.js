@@ -26,7 +26,7 @@ const ShowcaseList = () => {
         {
             key: 4,
             title: "Ricardo Ball",
-            description: "Classic game Ping Pong on the web. The unique of the game is that the theme is based on the world-famous dancer Ricardo. Only playable on PC web.",
+            description: "Classic game Ping Pong on the web. Starring the world-famous dancer Ricardo. Only playable on PC web.",
             githubLink: "https://github.com/yeatin/ricarball",
             launchLink: "https://yeatin.github.io/ricarball/"
         },
@@ -40,7 +40,7 @@ const ShowcaseList = () => {
     ]
     return (
         <article className='flex justify-center'>
-            <div className="cf ph6 pt0 flex justify-center flex-wrap">
+            <div className="cf ph6 flex justify-center flex-wrap">
                 {
                     lst.map(showcase => {
                         return (

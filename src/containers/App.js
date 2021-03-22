@@ -12,7 +12,6 @@ const App = () => {
 
   const onRouteChange = (route) => {
     setRoute(route);
-    console.log(`changed the route into ${route}`)
   }
 
   return (
@@ -20,14 +19,14 @@ const App = () => {
       {
         route === "home"
           ? <div className="home">
-            <Navigation onRouteChange={onRouteChange} />
+            <Navigation onRouteChange={onRouteChange} route={route} />
             <HomePage />
           </div>
           : (
             route === "projects"
               ? <div className="pages">
                 <Suspense fallback={<div>Loading...</div>}>
-                  <Navigation className="pages" onRouteChange={onRouteChange} />
+                  <Navigation className="pages" onRouteChange={onRouteChange} route={route} />
                   <ProjectsPage />
                 </Suspense>
               </div>
@@ -35,13 +34,13 @@ const App = () => {
                 route === "aboutMe"
                   ? <div className="pages">
                     <Suspense fallback={<div>Loading...</div>}>
-                      <Navigation className="pages" onRouteChange={onRouteChange} />
+                      <Navigation className="pages" onRouteChange={onRouteChange} route={route} />
                       <AboutMe />
                     </Suspense>
                   </div>
                   : <div className="pages">
                     <Suspense fallback={<div>Loading...</div>}>
-                      <Navigation className="pages" onRouteChange={onRouteChange} />
+                      <Navigation className="pages" onRouteChange={onRouteChange} route={route} />
                       <Contact />
                     </Suspense>
                   </div>

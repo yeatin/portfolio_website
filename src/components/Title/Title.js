@@ -4,7 +4,7 @@ const Title = () => {
     return (
         <Typewriter
             options={{
-                wrapperClassName: "ml7 underline f1 Typewriter__wrapper white",
+                wrapperClassName: "ml7 f1 fw9 Typewriter__wrapper white",
                 cursorClassName: "ml7 f1 Typewriter__cursor white",
                 loop: true,
                 delay: 35,

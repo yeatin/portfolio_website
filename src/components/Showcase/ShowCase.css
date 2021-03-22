@@ -2,14 +2,18 @@
     width: 80%;
     background-color: white;
     position: relative;
-    top: -3em;
+    top: -4em;
 }
 
 .box>img {
     filter: grayscale(100%);
     transition: .1s;
 }
+.box {
+    overflow:hidden;
+}
 
 .box>img:hover {
     filter:grayscale(0);
+    transform: scale(1.1);
 }
