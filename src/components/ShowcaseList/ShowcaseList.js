@@ -40,7 +40,7 @@ const ShowcaseList = () => {
     ]
     return (
         <article className='flex justify-center'>
-            <div className="cf ph6 flex justify-center flex-wrap">
+            <div className="ph5-l ph4 flex justify-center flex-wrap">
                 {
                     lst.map(showcase => {
                         return (
