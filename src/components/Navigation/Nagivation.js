@@ -3,9 +3,9 @@ const Navigation = ({ onRouteChange, route }) => {
         <nav className="mr5-l flex flex-wrap justify-end-l justify-center items-baseline">
             <p
                 className={route === 'home' ? (
-                    "f4-l f7 fw9 link hover-black black ph2-l pr1 pl0 pointer white mb0"
+                    "f4-l f7 fw9 link hover-white black ph2-l pr1 pl0 pointer white mb0"
                 ) : (
-                    "f4-l f7 link hover-black black ph2-l pr1 pl0 pointer silver mb0"
+                    "f4-l f7 link hover-white black ph2-l pr1 pl0 pointer silver mb0"
                 )
                 }
                 onClick={() => onRouteChange('home')}
