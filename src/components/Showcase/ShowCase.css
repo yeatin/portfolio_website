@@ -5,6 +5,15 @@
     top: -4em;
 }
 
+@media screen and (max-width: 460px){
+    .card-container{
+        width: 80%;
+        background-color: white;
+        position: relative;
+        top: -2em;
+    }
+}
+
 .box>img {
     filter: grayscale(100%);
     transition: .1s;

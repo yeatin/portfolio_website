@@ -2,12 +2,12 @@ import './ShowCase.css';
 
 const Showcase = ({ img, title, description, githubLink, launchLink }) => {
     return (
-        <div className="fl w-33 ph3 box tc">
-            <img src={require(`./showcase${img}.jpg`).default} alt={title} />
+        <div className="w-33-l w-100 ph3 box tc mt0-l mt5">
+            <img className="w-100" src={require(`./showcase${img}.jpg`).default} alt={title} />
             <div className="card-container center">
-                <dl className="tl ml4 f6 lh-copy">
+                <dl className="tl ml4-l ml3 f6-l f7 lh-copy">
                     <dt className="clip">Title</dt>
-                    <dd className="ml0 black truncate f3 fw6 black">{title}</dd>
+                    <dd className="ml0 black truncate f3-l f6 fw6 black">{title}</dd>
                     <dt className="clip">Artist</dt>
                     <dd className="tl ml0 gray w-70">{description}</dd>
                 </dl>
