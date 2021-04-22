@@ -1,3 +1,6 @@
+import enCv from "../pdf/Yeatin_CV.pdf";
+import chCv from "../pdf/Yeatin_CV_ch.pdf";
+
 const AboutMe = () => {
     return (
         <div>
@@ -20,6 +23,44 @@ const AboutMe = () => {
                         <li>Deputy President of Department Student Council</li>
                     </ul>
                 </div>
+            </div>
+            <div className="tc pb3">
+                <h1 className="mb1">CV</h1>
+                <a href={enCv}
+                    className="no-underline"
+                    download>
+                    <h3 className="center dim w4 ba b--black-30 br3 mt0 mb1 pa0 pt1 pb1">DOWNLOAD</h3>
+                </a>
+                <iframe title="en cv"
+                    src={`${enCv}#toolbar=0`}
+                    style={{
+                        borderBottom: "4px solid grey",
+                        borderTop: "4px solid grey"
+                    }}
+                    frameborder="0"
+                    width="51%"
+                    height="500px"
+                >
+                    English CV
+                        </iframe>
+                <h1 className="mb1">Chinese CV</h1>
+                <a href={chCv}
+                    className="no-underline"
+                    download>
+                    <h3 className="center dim w4 ba b--black-30 br3 mt0 mb1 pa0 pt1 pb1">DOWNLOAD</h3>
+                </a>
+                <iframe title="ch cv"
+                    src={`${chCv}#toolbar=0`}
+                    style={{
+                        borderBottom: "4px solid grey",
+                        borderTop: "4px solid grey"
+                    }}
+                    frameborder="0"
+                    width="51%"
+                    height="500px"
+                >
+                    Chinese CV
+                        </iframe>
             </div>
         </div>
     )

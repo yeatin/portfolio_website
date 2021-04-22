@@ -32,10 +32,10 @@ const ShowcaseList = () => {
         },
         {
             key: 5,
-            title: "Daily Chucknorris",
-            description: "Random cool facts of the legend Chucknorris. Refresh the website to have a new one.",
-            githubLink: "https://github.com/yeatin/dailychucknorris",
-            launchLink: "https://yeatin.github.io/dailychucknorris/"
+            title: "Quote Generator",
+            description: "Quote Generator is capable of generating random quotes, specifying the person who created the quote, and tweeting the quote you like.",
+            githubLink: "https://github.com/yeatin/quote-generator",
+            launchLink: "https://yeatin.github.io/quote-generator/"
         }
     ]
     return (
