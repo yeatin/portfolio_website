@@ -7,7 +7,7 @@ const Showcase = ({ img, title, description, githubLink, launchLink }) => {
             <div className="center card-container">
                 <dl className="tl ml4-l ml3 f6-l f7 lh-copy mb0">
                     <dd className="ml0 black truncate f3-l f6 fw6 black">{title}</dd>
-                    <dd className="tl ml0 gray w-70">{description}</dd>
+                    <dd className="ml0 gray w-90">{description}</dd>
                 </dl>
                 <div className="flex justify-center items-center mt3">
                     <a className="no-underline near-white bg-animate bg-near-black hover-bg-gray inline-flex items-center tc br2 pa1 mh2" href={githubLink} title="GitHub" target="_blank" rel="noreferrer">

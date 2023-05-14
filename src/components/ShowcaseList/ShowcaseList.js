@@ -5,16 +5,16 @@ const ShowcaseList = () => {
         {
             key: 1,
             title: "Face Brain RWD",
-            description: "With Clarify API, it detects human faces in the photos that users provide with image address.",
+            description: "This project is a full-stack application that includes frontend, backend, and database. Create an account to detect human faces in photos.",
             githubLink: "https://github.com/yeatin/face_brain_rwd",
-            launchLink: "https://face-brain-rwd.herokuapp.com/"
+            launchLink: "https://yeatin.github.io/face_brain_rwd/"
         },
         {
             key: 2,
-            title: "CyberFriends",
-            description: "A powerfull tool that you can easily find any robot in the list.",
-            githubLink: "https://github.com/yeatin/The-Ultimate-PWA-Powered-CyberFriends",
-            launchLink: "https://yeatin.github.io/The-Ultimate-PWA-Powered-CyberFriends/"
+            title: "Ricardo Ball",
+            description: "Classic Ping Pong videogame. Starring the world-famous dancer Ricardo. Only playable on PC web.",
+            githubLink: "https://github.com/yeatin/ricarball",
+            launchLink: "https://yeatin.github.io/ricarball/"
         },
         {
             key: 3,
@@ -25,10 +25,10 @@ const ShowcaseList = () => {
         },
         {
             key: 4,
-            title: "Ricardo Ball",
-            description: "Classic game Ping Pong on the web. Starring the world-famous dancer Ricardo. Only playable on PC web.",
-            githubLink: "https://github.com/yeatin/ricarball",
-            launchLink: "https://yeatin.github.io/ricarball/"
+            title: "CyberFriends",
+            description: "A tool that you can easily find any robot in the list.",
+            githubLink: "https://github.com/yeatin/The-Ultimate-PWA-Powered-CyberFriends",
+            launchLink: "https://yeatin.github.io/The-Ultimate-PWA-Powered-CyberFriends/"
         },
         {
             key: 5,
