@@ -3,9 +3,12 @@ import chCv from "../pdf/Yeatin_CV_ch.pdf";
 
 const AboutMe = () => {
     const owStart = new Date("July 01, 2017 00:00:00");
+    const archeryStart = new Date("Dec 01, 2021 00:00:00");
     const rightNow = new Date();
     const timeIPlayedOw = rightNow - owStart;
     const yearsIPlayedOw = Math.floor(timeIPlayedOw / 1000 / 60 / 60 / 24 / 365);
+    const timeIDidArchery = rightNow - archeryStart;
+    const yearsIDidArchery = Math.floor(timeIDidArchery / 1000 / 60 / 60 / 24 / 365);
     return (
         <div>
             <h1 className="tc f2-l f3 mt0-l mb5-l mt4 mb2"><span className="f1-l f2 fw1">| </span>02 : About Me<span className="f1-l f2 fw1"> |</span></h1>
@@ -22,6 +25,10 @@ const AboutMe = () => {
                                 <li className="f4">Assassin's Creed series<span className="f5"> - Should be the first 3A game I ever played, which put the seed of obsession for video games in little Yeatin. But I stoped playing after Syndicate. You know, the whole series changed, in a bad way (I think).</span></li>
                             </ol>
                         </li>
+                        <li>
+                            <h3>Archery</h3>
+                            <p>{`Started going to archery range ${yearsIDidArchery} ${yearsIDidArchery > 1 ? "years" : "year"} ago. It provokes the urge to do better every time when I concentrate on the movement of the muscles and the alighment of my body. From holding up a bow to feeling the string release - by enjoying the progress I make, I can't help but keep praticing until I master it.`}</p>
+                        </li>
                     </ul>
                     <h2>Experience</h2>
                     <ul>
@@ -30,23 +37,6 @@ const AboutMe = () => {
                 </div>
             </div>
             <div className="tc pb3">
-                <h1 className="mb1">CV</h1>
-                <a href={enCv}
-                    className="no-underline"
-                    download>
-                    <h3 className="center dim w4 ba b--black-30 br3 mt0 mb1 pa0 pt1 pb1">DOWNLOAD</h3>
-                </a>
-                <iframe title="en cv"
-                    src={`${enCv}#toolbar=0`}
-                    style={{
-                        borderBottom: "4px solid grey",
-                        borderTop: "4px solid grey"
-                    }}
-                    width="51%"
-                    height="500px"
-                >
-                    English CV
-                </iframe>
                 <h1 className="mb1">Chinese CV</h1>
                 <a href={chCv}
                     className="no-underline"
@@ -63,6 +53,23 @@ const AboutMe = () => {
                     height="500px"
                 >
                     Chinese CV
+                </iframe>
+                <h1 className="mb1">CV</h1>
+                <a href={enCv}
+                    className="no-underline"
+                    download>
+                    <h3 className="center dim w4 ba b--black-30 br3 mt0 mb1 pa0 pt1 pb1">DOWNLOAD</h3>
+                </a>
+                <iframe title="en cv"
+                    src={`${enCv}#toolbar=0`}
+                    style={{
+                        borderBottom: "4px solid grey",
+                        borderTop: "4px solid grey"
+                    }}
+                    width="51%"
+                    height="500px"
+                >
+                    English CV
                 </iframe>
             </div>
         </div>
