@@ -13,7 +13,7 @@ const Contact = () => {
                 </a>
             </div>
             <h4 className="mt6-l mt5 tc mb2">Email</h4>
-            <p className="tc mt0 center f5 bt bl b--moon-gray shadow-5 mw5 pa3">thehyt7688@gmail.com</p>
+            <p className="tc mt0 center f5 bt bl b--moon-gray shadow-5 mw5 pa3">yeatin.huang@gmail.com</p>
         </div>
     )
 }

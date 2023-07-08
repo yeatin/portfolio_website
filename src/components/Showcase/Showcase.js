@@ -1,9 +1,10 @@
 import './Showcase.css';
 
 const Showcase = ({ img, title, description, githubLink, launchLink }) => {
+    console.log("img", img);
     return (
         <div className="w-33-l w-100 ph3-l ph0 box tc mt0-l mt5">
-            <img className="w-100" src={require(`./showcase${img}.jpg`).default} alt={title} />
+            <img className="w-100" src={require(`./${img}.jpg`)} alt={title} />
             <div className="center card-container">
                 <dl className="tl ml4-l ml3 f6-l f7 lh-copy mb0">
                     <dd className="ml0 black truncate f3-l f6 fw6 black">{title}</dd>
